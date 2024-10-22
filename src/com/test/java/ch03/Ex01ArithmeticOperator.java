@@ -15,6 +15,6 @@ public class Ex01ArithmeticOperator {
 		System.out.printf("%d * %d = %d%n", a, b, a*b);
 		System.out.printf("%d * %d = %d", a, b, sum);
 		
-	}
+	} 
 
 }
