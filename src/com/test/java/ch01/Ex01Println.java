@@ -9,6 +9,10 @@ public class Ex01Println {
 		System.out.println("환영합니다.\n");
 		System.out.println("자 이제 코딩을 배워 봅시다.");
 		
+		int result = 50;
+		System.out.println(result);
+		
+		
 	}
 
 }
