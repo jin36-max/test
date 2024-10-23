@@ -5,12 +5,18 @@ import java.util.Scanner;
 public class Ex01ArithemeticOperatorTest {
 	
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
 		
-		int tv = 5;
-		int price = 10;
-		int sum = tv*price;
+		int tv;
+		int tvPrice;
 		
-		System.out.printf("%d * %d = %d", tv, price, sum);
+		System.out.printf("Tv수량을 입력하세요.%n");
+		tv = scan.nextInt();
+		System.out.printf("Tv금액을 입력하세요.%n");
+		tvPrice = scan.nextInt();
+		
+		int sum = tv * tvPrice;
+		System.out.printf("%n%d * %d = %d", tv, tvPrice, sum );
 		
 	}
 

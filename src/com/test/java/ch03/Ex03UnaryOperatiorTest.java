@@ -4,10 +4,10 @@ public class Ex03UnaryOperatiorTest {
 	
 	public static void main(String[] args) {
 		int a = 5;
-		a = --a;
+		--a;
 		System.out.printf("%d%n%n", a);
 		
-		a = --a;
+		--a;
 		System.out.printf("%d%n", a);
 	}
 
