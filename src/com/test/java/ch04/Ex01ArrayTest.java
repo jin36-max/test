@@ -4,19 +4,16 @@ public class Ex01ArrayTest {
 	
 	public static void main(String[] args) {
 		
-<<<<<<< HEAD
-=======
+
 		int[] arr1 = {50, 30, 0};
 		
-		System.out.println(arr1[1]);
+		System.out.println(arr1[2]);
 		
-		System.out.println(arr1[0] > arr1[1] ? "arr1[0]" : "arr1[1]");
+		System.out.println(arr1[0] > arr1[1] ? arr1[0] : arr1[1]);
         
 		
 		
-		
->>>>>>> 0bc50eba2771776bc5379bb4b5d3559248f51c36
-		
+
 	}
 
 }
