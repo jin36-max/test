@@ -1,21 +1,38 @@
 package com.test.java.ch06;
 
 public class Ex01ForTest {
+	
 	public static void main(String[] args) {
+		
 		for (int i=1; i<10; i++) {
 			System.out.println(i*2);
 		}
 		System.out.println();
 		
-		for (int i ; i++) {
-			int[] arr2 = { i, i+30, i+50 };
-			
-			
+		int [] arr2 = {80, 90, 95};
+		for(int i=0; i<3; i++) {
+			System.out.println("중간고사 점수: "  + arr2[i]);
 		}
+		System.out.println();
+		
+		String result ="";
+		int[] arr3 = {30, 50, 80, 90};
+		for(int i=0; i<4; i++) {
+			 if (arr3[i] < 60) {
+				 result = "재시험";
+				 System.out.printf("%s%n", result);
+			 } else {
+				 System.out.printf("%d%n", arr3[i]);
+			 }
+				 
+				 
+		}
+			
+				
+		
+		}
+	
 	}
-
-}
-
 
 
 /*
