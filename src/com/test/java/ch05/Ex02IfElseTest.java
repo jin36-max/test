@@ -4,16 +4,17 @@ import java.util.Scanner;
 
 public class Ex02IfElseTest {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		
 		System.out.printf("값을 입력하세요%n");
 		
-		int level = scan.nextInt();
+		int level = s.nextInt();
+		String name ="안녕하세요.";
 		
 		if (level > 3) {
-			 System.out.printf("쩡회원님 안녕하세요.%n");
+			 System.out.printf("정회원님 %s%n", name );
 		} else {
-			 System.out.printf("회원님 안녕하세요.");
+			 System.out.printf("회원님 %s", name);
 		}
    }
 

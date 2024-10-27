@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex04IfElseTest {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		
+		System.out.print("숫자를 입력하세요 : ");
 		int level = s.nextInt();
 		String name = "계절";
 		
@@ -24,7 +24,8 @@ public class Ex04IfElseTest {
 			name = "없는 계절 입니다.";
 		}
 		
-		System.out.printf("지금은 %d월달이고 %s입니다.",level, name );
+		String msg = name + " 입니다."; 
+		System.out.printf(msg);
 	}
 
 }
