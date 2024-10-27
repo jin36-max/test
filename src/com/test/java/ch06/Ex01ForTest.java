@@ -5,8 +5,10 @@ public class Ex01ForTest {
 	public static void main(String[] args) {
 		
 		for (int i=1; i<10; i++) {
-			System.out.println(i*2);
+			int sum = i*2;
+			System.out.printf("2x%d = %d ", i, sum);
 		}
+		System.out.println();
 		System.out.println();
 		
 		int [] arr2 = {80, 90, 95};

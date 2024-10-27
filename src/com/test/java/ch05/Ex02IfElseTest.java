@@ -8,7 +8,7 @@ public class Ex02IfElseTest {
 		
 		System.out.printf("값을 입력하세요%n");
 		
-		int level = s.nextInt();
+		int level = scan.nextInt();
 		
 		if (level > 3) {
 			 System.out.printf("쩡회원님 안녕하세요.%n");
