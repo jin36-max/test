@@ -18,17 +18,16 @@ public class Ex07WhileTest {
 				
 			} else if (money == 500 && total>=500) {
 				System.out.println("콜라");
-				
+				total -=money;
 			} else if (money == 300 && total>=300) {
 				System.out.println("사이다");
-				
+				total -=money;
 			} else if (money == 200 && total>=200) {
 				System.out.println("환타");
-				
+				total -=money;
 			} else 
 				System.out.println("잘못 입력하였습니다.");
 			
-			total -=money;
 			
 		}
 	}
