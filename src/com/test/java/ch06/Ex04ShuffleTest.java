@@ -7,20 +7,20 @@ public class Ex04ShuffleTest {
 	public static void main(String[] args){
 		int[] arr = new int[45];
 		
-				for (int i=0; i<arr.length; i++) {
-					arr[i] = 1+i;
-					System.out.printf("%d ", arr[i]);
-				
-				}
-				System.out.println();
-				
-				for (int i=0; i<6; i++ ) {
-					int n = (int)(Math.random()*45);
-					int tmp = arr[i];
-					arr[i] = arr[n];
-					arr[n] = tmp;	
-					System.out.printf("%d ", arr[i]);
-				}
+		for (int i=0; i<arr.length; i++) {
+			arr[i] = 1+i;
+			System.out.printf("%d ", arr[i]);
+		
+		}
+		System.out.println();
+		
+		for (int i=0; i<6; i++ ) {
+			int n = (int)(Math.random()*45);
+			int tmp = arr[i];
+			arr[i] = arr[n];
+			arr[n] = tmp;	
+			System.out.printf("%d ", arr[i]);
+		}
 				
 		
 	}
