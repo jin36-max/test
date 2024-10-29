@@ -5,16 +5,21 @@ public class Ex08BranchingTest {
 		
 	int i=1, sum=0;
 	while(true) {
-		if( sum > 50)
-			break;
-		++i;
-		sum+=i;
+		if(i%2==0) {
+			sum+=i;
+			i++;
+			if (sum > 50){
+				System.out.printf("%d", i);
+				break;
+			}
+			
+		} else if (i%2!=0) {
+			i++;		
+		}
 		
 	} 
-	System.out.printf("%d", i);
-		
 	
-    
+		
  
     }
 }	
