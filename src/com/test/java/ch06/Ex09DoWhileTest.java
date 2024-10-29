@@ -14,7 +14,7 @@ public class Ex09DoWhileTest {
 				System.out.println("숫자입니다.");
 			else if (ch >= 'a' && ch <= 'z')
 				System.out.println("알파벳 소문자입니다.");
-			else if (ch >+ 'A' && ch <= 'Z')
+			else if (ch >= 'A' && ch <= 'Z')
 				System.out.println("알파벳 대문자입니다.");
 		} while (ch != 'Z');
 		System.out.println("프로그램이 종료되었습니다.");

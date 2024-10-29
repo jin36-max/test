@@ -1,9 +1,12 @@
 package com.test.java.ch05;
 
+import java.util.Scanner;
 public class Ex05Switch {
 	
 	public static void main(String[] args) {
-		int level = 5;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("레벨을 입력하세요: ");
+		int level = scanner.nextInt();
 		String name = "";
 		
 		switch (level) {

@@ -3,21 +3,22 @@ package com.test.java.ch06;
 public class Ex08BranchingTest {
 	public static void main(String[] args) { 
 		
-	int i=1, sum=0;
-	while(true) {
-		if(i%2==0) {
-			sum+=i;
+		int i=0, sum=0;
+		while(true) {
 			i++;
-			if (sum > 50){
-				System.out.printf("%d", i);
-				break;
+			if(i%2==0) {
+				sum+=i;
+				if (sum > 50){
+					System.out.printf("%d", i);
+					break;
+				}
+				
+			} else {
+				continue;
 			}
 			
-		} else if (i%2!=0) {
-			i++;		
-		}
-		
-	} 
+			System.out.println("짝수입니다." + i);
+		} 
 	
 		
  
