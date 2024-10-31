@@ -7,6 +7,12 @@ public class Ex02ClassTest {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("도서관리 프로그램");
 		
+		class Book{
+			String title;
+			String author;
+			int price;
+		}
+		
 		Book[] books = new Book[10];
 		
 		boolean run = true;
@@ -39,7 +45,7 @@ public class Ex02ClassTest {
 					System.out.println("책의 목록을 확인합니다.");
 					
 					for(int i=0; i<bookCount; i++) {
-						System.out.printf("제목: %s 저자: %s, 가격 %d%n", books[i].title, books[i].author, books[i].price);
+						System.out.printf("제목:%s 저자:%s, 가격:%d%n", books[i].title, books[i].author, books[i].price);
 					}
 					break;
 				case 0:
@@ -55,11 +61,6 @@ public class Ex02ClassTest {
 
 }
 
-class Book{
-	String title;
-	String author;
-	int price;
-}
 
 
 /*
