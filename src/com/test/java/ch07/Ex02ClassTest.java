@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Ex02ClassTest {
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("도서관리 프로그램");
 		
@@ -60,6 +61,7 @@ public class Ex02ClassTest {
 	}
 
 }
+
 
 
 
