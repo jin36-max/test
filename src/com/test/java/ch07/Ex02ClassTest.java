@@ -8,12 +8,6 @@ public class Ex02ClassTest {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("도서관리 프로그램");
 		
-		class Book{
-			String title;
-			String author;
-			int price;
-		}
-		
 		Book[] books = new Book[10];
 		
 		boolean run = true;
@@ -60,6 +54,12 @@ public class Ex02ClassTest {
 		
 	}
 
+}
+
+class Book{
+	String title;
+	String author;
+	int price;
 }
 
 
