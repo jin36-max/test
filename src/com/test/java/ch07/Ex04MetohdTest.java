@@ -1,32 +1,72 @@
 package com.test.java.ch07;
 
+import java.util.Arrays;
+import java.util.Scanner;
 public class Ex04MetohdTest {
 	
 	public static void main(String[] args) {
 		BookTest book = new BookTest();
-		int bookPrice = book.getPrice();
 		
-		book.price = 50000;
-		bookPrice = book.getPrice();
-		System.out.println("책의 가격:" + bookPrice);
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("값을 입력하세요:");
+		book.price = scanner.nextInt();
+		
+		int bookprice = book.getPrice();
+		System.out.println("책의 가격:" + bookprice);
+		System.out.println();
+		
+		BookTest book2 = new BookTest();
+		book.setPrice(15000);
+		book2.setPrice(300000);
+		
+		System.out.println("책금액:" + book.price);
+		
+		String[] au = {"둘리", "또치"};
+		book.setAuthors(au);
+		
+		System.out.println("--- 저자 ---");
+		System.out.println(Arrays.toString(book.getAuthors()));
+		
+		
+		
 	}
 
 }
 
-class BookTest{
+class BookTest {
 	int price;
+	String [] authors = new String[3];
 	
 	int getPrice() {
-		if (price >= 10000 && price < 80000) 
-			return price;
-		System.out.println(price);
+		if (price <= 0)
+			return 0;
+		else 
+		    return price;
+	}
+	
+	void setPrice(int price) {
+		if (price >= 10000 && price < 80000) {
+			this.price = price;
+			System.out.println("책의 가격:" + price);
+		}else
+			System.out.println("설정 가능하지 않은 가격입니다.");
+	}
+	
+	void setAuthors(String [] authors) {
+//		this.authors = authors;
+		for(int i=0; i<authors.length; i++) {
+			this.authors[i] = authors[i];
+			
+		}
 		
-		System.out.println("설정 가능하지 않은 가격입니다.");
-		
-		return 0;
+	}
+	
+	String[] getAuthors() {
+		return authors;
 	}
 	
 }
+	
 
 
 /*

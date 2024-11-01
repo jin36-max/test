@@ -8,7 +8,7 @@ public class Ex02ClassTest {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("도서관리 프로그램");
 		
-		Book[] books = new Book[10];
+		Book4[] books = new Book4[10];
 		
 		boolean run = true;
 		
@@ -24,7 +24,7 @@ public class Ex02ClassTest {
 			
 			switch(menu){
 				case 1:
-					Book book1 = new Book();
+					Book4 book1 = new Book4();
 					System.out.println("책을 등록하세요.");
 					System.out.print("제목:");
 					book1.title = scanner.nextLine();
@@ -56,7 +56,7 @@ public class Ex02ClassTest {
 
 }
 
-class Book{
+class Book4{
 	String title;
 	String author;
 	int price;

@@ -43,7 +43,7 @@ class Book3 {
 	
 	void setPrice(int price) {
 		System.out.println("price -> " + price);
-		System.out.println("this.price -> " + price);
+		System.out.println("this.price -> " + this.price);
 		
 		this.price = price;
 		System.out.println("this.price = price 적용 후 this.price ->" + this.price);
