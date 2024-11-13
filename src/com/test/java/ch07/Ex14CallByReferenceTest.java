@@ -7,7 +7,7 @@ public class Ex14CallByReferenceTest {
 		
 		System.out.println("책 금액: " + book.price);
 		
-		book.changePrice2(book, 102000);
+		book.changePrice2(book);
 		
 		System.out.println("수정된 책 금액: " + book.price);
 	}

@@ -6,8 +6,8 @@ public class Ex13CallByValueTest {
 		Ex12BookTest book = new Ex12BookTest("자바문법","엘컴퓨터학원", 30000);
 		
 		System.out.println("책 금액: " + book.price);
-		
-		book.changePrice(50000);
+		int p = 50000;
+		book.changePrice(p);
 		
 		System.out.println("수정된 책 금액: " + book.price);
 	}

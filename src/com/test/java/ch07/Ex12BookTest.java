@@ -11,13 +11,15 @@ public class Ex12BookTest {
 		this.price = price;
 		
 	}
-	int changePrice(int price2) {
-		price = price2;
-		return price;
+	void changePrice(int price2) {
+		price2 = 30000;
+		//price = price2;
+		//return price;
 	}
-	void changePrice2(Ex12BookTest book, int price3) {
-		price = price3;
-		return;
+	void changePrice2(Ex12BookTest book) {
+		book.price = 30000;
+		//price = price3;
+		//return;
 		
 	}
 	
