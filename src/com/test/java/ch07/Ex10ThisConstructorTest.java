@@ -2,7 +2,7 @@ package com.test.java.ch07;
 
 public class Ex10ThisConstructorTest {
 	
-	static void main(String[] args) {
+	public static void main(String[] args) {
 		Car2 c1 = new Car2();
 		Car2.carInfo(c1);
 		
@@ -49,7 +49,7 @@ class Car2 {
 	
 	
 	static void carInfo(Car2 car) {
-		System.out.printf("이름: %s%n최대속력: %d%n회사: %s%nn", car.name, car.maxSpeed, car.company);
+		System.out.printf("이름: %s%n최대속력: %d%n회사: %s%n%n", car.name, car.maxSpeed, car.company);
 		
 	}
 }
