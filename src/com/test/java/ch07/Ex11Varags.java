@@ -2,7 +2,7 @@ package com.test.java.ch07;
 
 import java.util.Arrays;
 
-public class Ex11Varargs {
+public class Ex11Varags {
 	public static void main(String[] args) {
 		Book12 book1 = new Book12();
 		book1.title = "자바문법";
