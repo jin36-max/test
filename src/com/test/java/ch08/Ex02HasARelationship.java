@@ -41,7 +41,7 @@ class Cart {
 	int count;
 	
 	void putBook(Book2 book) {
-		this.books = books;
+		this.book = book;
 	}
 	
 	void putBooks(Book2...books) {
