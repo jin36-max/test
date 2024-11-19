@@ -8,7 +8,11 @@ public class Ex02ClassTest {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("도서관리 프로그램");
 		
+<<<<<<< Updated upstream
 		Book110[] books = new Book110[10];
+=======
+		Book3[] books = new Book3[10];
+>>>>>>> Stashed changes
 		
 		boolean run = true;
 		
@@ -24,7 +28,11 @@ public class Ex02ClassTest {
 			
 			switch(menu){
 				case 1:
+<<<<<<< Updated upstream
 					Book110 book1 = new Book110();
+=======
+					Book3 book1 = new Book3();
+>>>>>>> Stashed changes
 					System.out.println("책을 등록하세요.");
 					System.out.print("제목:");
 					book1.title = scanner.nextLine();
@@ -56,7 +64,11 @@ public class Ex02ClassTest {
 
 }
 
+<<<<<<< Updated upstream
 class Book110{
+=======
+class Book3{
+>>>>>>> Stashed changes
 	String title;
 	String author;
 	int price;
