@@ -38,7 +38,7 @@ class BookTest {
 	String [] authors = new String[3];
 	
 	int getPrice() {
-<<<<<<< Updated upstream
+
 		if (price <= 0)
 			return 0;
 		else 
@@ -64,13 +64,12 @@ class BookTest {
 	
 	String[] getAuthors() {
 		return authors;
-=======
+
 		if (price >= 10000 && price < 80000) {
 			
 		} else System.out.println("설정 가능하지 않은 가격입니다.");
 		
 		return price;
->>>>>>> Stashed changes
 	}
 	
 }

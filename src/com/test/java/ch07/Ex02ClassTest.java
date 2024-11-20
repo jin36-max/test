@@ -6,18 +6,10 @@ public class Ex02ClassTest {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("도서관리 프로그램");
-		
-<<<<<<< Updated upstream
-		Book110[] books = new Book110[10];
-=======
-		Book3[] books = new Book3[10];
->>>>>>> Stashed changes
-		
-		boolean run = true;
-		
+		Book36[] books = new Book36[10];
 		int bookCount = 0;
 		
+		System.out.println("도서관리 프로그램");
 		
 		while(true) {
 			System.out.println("-------------");
@@ -26,55 +18,60 @@ public class Ex02ClassTest {
 			int menu = scanner.nextInt();
 			scanner.nextLine();
 			
+			if (menu == 0) {
+				break;
+			}
+			
 			switch(menu){
 				case 1:
-<<<<<<< Updated upstream
-					Book110 book1 = new Book110();
-=======
-					Book3 book1 = new Book3();
->>>>>>> Stashed changes
-					System.out.println("책을 등록하세요.");
-					System.out.print("제목:");
-					book1.title = scanner.nextLine();
-					System.out.print("저자:");
-					book1.author = scanner.nextLine();
-					System.out.print("가격:");
-					book1.price = scanner.nextInt();
-					System.out.printf("제목:%s, 저자:%s, 가격:%d%n", book1.title, book1.author, book1.price);		
-					
-					books[bookCount++] = book1;
-					break;
-				case 2:
-					System.out.println("책의 목록을 확인합니다.");
-					
-					for(int i=0; i<bookCount; i++) {
-						System.out.printf("제목:%s 저자:%s, 가격:%d%n", books[i].title, books[i].author, books[i].price);
-					}
-					break;
-				case 0:
-					run = false;
-					break;										
-			}
-			if(!run)
-				break;
-		}
-		System.out.println("프로그램이 종료됩니다.");
-		
+					 if (bookCount < books.length) {
+	                        Book36 book = new Book36(); 
+	                        System.out.println("책을 등록하세요.");
+	                        System.out.print("제목: ");
+	                        book.title = scanner.nextLine();
+	                        System.out.print("저자: ");
+	                        book.author = scanner.nextLine();
+	                        System.out.print("가격: ");
+	                        book.price = scanner.nextInt();
+	                        scanner.nextLine(); 
+
+	                        books[bookCount++] = book; 
+	                        System.out.printf("등록된 책 - 제목: %s, 저자: %s, 가격: %d원%n", book.title, book.author, book.price);
+	                    } else {
+	                        System.out.println("더 이상 책을 등록할 수 없습니다.");
+	                    }
+	                    break;
+
+	                case 2: 
+	                    if (bookCount == 0) {
+	                        System.out.println("등록된 책이 없습니다.");
+	                    } else {
+	                        System.out.println("책의 목록을 확인합니다.");
+	                        for (int i = 0; i < bookCount; i++) {
+	                            System.out.printf("제목: %s, 저자: %s, 가격: %d원%n",
+	                                    books[i].title, books[i].author, books[i].price);
+	                        }
+	                    }
+	                    break;
+
+	                default: // 잘못된 메뉴 선택
+	                    System.out.println("잘못된 메뉴를 선택하셨습니다. 다시 시도하세요.");
+	                    break;
+	        }
+
+	   }
+
+	     System.out.println("프로그램이 종료됩니다.");
+	     scanner.close();
 	}
-
 }
 
-<<<<<<< Updated upstream
-class Book110{
-=======
-class Book3{
->>>>>>> Stashed changes
-	String title;
-	String author;
-	int price;
+class Book36 {
+	String title;  
+	String author; 
+	int price;     
 }
-
-
+					
 
 
 /*
