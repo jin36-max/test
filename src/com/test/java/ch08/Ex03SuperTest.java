@@ -4,7 +4,7 @@ public class Ex03SuperTest {
 	
 	public static void main(String[] args) {
 		
-		EBook3 eb2 = new EBook3();
+		EBook7 eb2 = new EBook7();
 		System.out.println("책의 제목은 [" + eb2.title + "]이고 글자의 색은 [" + eb2.fontColor + "]입니다.");
 		
 	}
@@ -17,22 +17,23 @@ public class Ex03SuperTest {
 힌트) super를 이용하세요.
 */
 
-class Book3 {
+class Book0 {
 	String title;
 	String author;
 	
-	Book3(String title, String author) {
+	Book0(String title, String author) {
 		this.title = title;
 		this.author = author;
 	}
 }
 
-class EBook4 extends Book3 {
+class EBook7 extends Book0 {
 	String fontColor;
 	
-	EBook4() {
+	EBook7() {
 		super("제목", "저자");
 		this.fontColor = "화이트";
 		
 	}
+
 }

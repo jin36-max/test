@@ -28,6 +28,8 @@ class Child extends Parent {
 	String name = "자녀";
 	
 	void printInfo2() {
+		System.out.println(this.name);
+		System.out.println(super.name);
 		System.out.println("이것은 자녀 클래스 입니다.");
 	}
 	

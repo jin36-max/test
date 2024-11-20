@@ -42,4 +42,5 @@ class EBook3 extends Book4 {
 	String getAuthor() {
 		return this.author;
 	}
+
 }

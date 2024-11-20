@@ -3,7 +3,7 @@ package com.test.java.ch08;
 public class Ex01Inheritance {
 	
 	public static void main(String[] args) {
-		Book book = new Book();
+		Book01 book = new Book01();
 		book.price = 50000;
 		System.out.println("책의 가격은(세금포함):" + book.getPrice());
 		
@@ -29,7 +29,7 @@ public class Ex01Inheritance {
 
 }
 
-class Book {
+class Book01 {
 	String title;
 	String author;
 	int price;
@@ -40,7 +40,7 @@ class Book {
 	}
 }
 
-class EBook extends Book {
+class EBook extends Book01 {
 	String[] supportDevices;
 	
 	void printDevices() {
@@ -51,7 +51,7 @@ class EBook extends Book {
 	}
 }
 
-class PaperBook extends Book {
+class PaperBook extends Book01 {
 	int width;
 	int height;
 	
